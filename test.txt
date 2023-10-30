@@ -1,0 +1,26 @@
+                <p class="tableOfContentsText">Introduction</p>
+                <p class="tableOfContentsText">Athletic Stance & Footwork</p>
+                <p class="tableOfContentsText">Bump Passing</p>
+                <p class="tableOfContentsText">&emsp;Platform</p>
+                <p class="tableOfContentsText">&emsp;Contact</p>
+                <p class="tableOfContentsText">&emsp;Post-Contact</p>
+                <p class="tableOfContentsText">Hand Passing</p>
+                <p class="tableOfContentsText">&emsp;Platform</p>
+                <p class="tableOfContentsText">&emsp;Contact</p>
+                <p class="tableOfContentsText">&emsp;Post-Contact</p>
+                <p class="tableOfContentsText">Platform Angling</p>
+                <p class="tableOfContentsText">Digging Techniques</p>
+                <p class="tableOfContentsText">&emsp;Pancakes</p>
+                <p class="tableOfContentsText">&emsp;One Handed Digs</p>
+                <p class="tableOfContentsText">&emsp;Overhead Digs</p>
+
+                <p style="margin-top: 1vh; text-align:center; font-family:'Futura PT Heavy'; font-size:20px; margin-top:0; margin-bottom:0; line-height:200%;">TABLE OF CONTENTS</p>
+
+
+
+blocking
+when to block when not to
+
+serving
+
+drills

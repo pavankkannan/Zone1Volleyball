@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Futura PT Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: url("./futura-pt-cufonfonts-webfont/FuturaCyrillicHeavy.woff") ;
+}
+
+@font-face {
+    font-family: 'Futura PT Extra Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./futura-pt-cufonfonts-webfont/FuturaCyrillicExtraBold.woff');
+} 
+
+@font-face {
+    font-family: 'Futura PT Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./futura-pt-cufonfonts-webfont/FuturaCyrillicMedium.woff');
+}
+
+@font-face {
+    font-family: 'BasierCircle-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./BasierCircle-Bold.woff');
+}
+
+@font-face {
+    font-family: 'Rubik Bold';
+    font-style: normal;
+    font-weight: bold;
+    src: url('./Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./Rubik/Rubik-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./futura-pt-cufonfonts-webfont/FuturaCyrillicBook.woff');
+}
+
+body, ul, nav, main {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    --navHeight: 10vh;
+}
+
+/* body {
+    background-color: black;
+} */
+
+.menuIcon {
+    height: 50%;
+    filter: invert(1);
+    margin-left: 20px;
+}
+
+.logo {
+    justify-content: center;
+    height: 70%;
+}
+
+.navDummy {
+    height: 50%;
+    visibility: hidden;
+}
+
+.topBar {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
+
+
+.topTab {
+    height: 70%;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    border-right: 1.3px solid #4d4dff;
+    border-left: 1.3px solid #4d4dff;
+    transform: skew(-7.1deg);
+    margin-left: -1px;
+    display: none;
+    text-decoration: none;
+}
+
+
+.topTab:hover {
+    background-color: #4d4dff;
+    height: 100%;
+}
+
+.sidebar {
+    height: 90vh;
+    opacity: 0;
+    width: 50vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position: fixed;
+    top: 10vh;
+}
+
+
+.sideTab {
+    width: 100%;
+    height: 7.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: .1vh solid #4d4dff;
+}
+
+.sideTab:hover {
+    background-color: #4d4dff;
+}
+
+.tabText {
+    margin-left: 20px;
+    overflow-wrap: break-word;
+    font-family: 'Futura PT Heavy';
+    font-size: 1rem;
+    color: white;
+    list-style-type: none;
+}
+
+
+
+main {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    margin-top: 10vh;
+}
+
+.titleImage {
+    /* height: 300px; */
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5vh;
+    margin-bottom: 1.5vh;
+}
+
+
+.articleBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* margin-top: 1vh; */
+
+}
+
+.leftBox {
+    /* height: 1700px; */
+    width: 17.5vw;
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.tableOfContentsText {
+    /* margin-left: 25%; */
+    font-family: 'Futura PT Medium';
+    font-size: 2vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 200%;
+}
+
+.tableOfContentsText:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.rightBox {
+    /* height: 1700px; */
+    width: 96.5vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    padding-top: 2.5vh; */
+}
+
+.articleText {
+    font-size: 2vh;
+    color: black;
+    font-family: 'Futura PT Book';
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    display: block;
+}
+
+.articleHeaderBox {
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border: 0;
+    padding: 2vw;
+    justify-content: space-between;
+}
+
+.active, .articleHeaderBox:hover {
+    cursor: pointer;
+    background-color: #4d4dff;
+}
+
+/* .active, .articleHeaderBox {
+    margin-bottom: 0;
+} */
+
+.content {
+    border: 1px solid #4d4dff;
+    display: none;
+    margin-bottom: 1vh;
+}
+
+.articleHeader {
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: 'Futura PT Heavy';
+    transform: skew(-7.1deg);
+    /* margin: 2.5vw; */
+}
+
+.articleSubHeader {
+    margin-left: 2.5vw; 
+    margin-right: 2.5vw; 
+    margin-bottom: 0; 
+    margin-top: 0;
+    font-family: "Futura PT Heavy"; 
+    font-size: 18px; 
+    font-weight: bold;
+    color: black;
+}
+
+/*ROTATIONS PAGE CSS*/
+
+.toolBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 50vh;
+    margin-top: 1.5vh;
+}
+
+.court {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(240, 142, 29);
+    top: 0;
+    left: 0;
+    border: 5px solid white;
+}
+
+.tenFoot {
+    height: 133px;
+    width: 400px;
+    border-bottom: 5px solid white;
+    display: flex;
+    align-items: center;
+}
+
+.player {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-family: 'Futura PT Heavy';
+    text-align: center;
+    line-height: 50px;
+
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+    
+}
+
+.player:hover {
+    cursor: pointer;
+}
+
+.toolInfoBox {
+    width: 30vw;
+    height: 40vh;
+    border: 2px solid #4d4dff
+}
+
+.toolInfoHeader {
+    font-family: 'Futura PT Heavy';
+    color: #4d4dff;
+    font-size: 25px;
+    transform: skew(-7.1deg);
+    text-align: center;
+}
+
+.toolButton {
+    width: 8vw;
+    height: 3vw;
+    border: 2px solid #4d4dff;
+    background-color: black;
+    font-family: 'Futura PT Heavy';
+    font-size: 20px;
+    color: #4d4dff;
+}
+
+.toolButton:hover {
+    border: 5px solid white;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+    .sidebar, .navDummy, .menuIcon {
+        display: none;
+    }
+    .topBar {
+        justify-content: center;
+    }
+    .topTab {
+        display: flex;
+    }
+    .tabText {
+        margin-left: 0;
+    }
+    .logo {
+        margin-right: -4px;
+    }
+    .leftBox {
+        display: flex;
+    }
+    .rightBox {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .sidebar, .navDummy, .menuIcon {
+        display: flex;
+    }
+    .topBar {
+        justify-content: space-between;
+    }
+    .topTab {
+        display: none;
+    }
+    .tabText {
+        margin-left: 20px;
+    }
+    .logo {
+        margin-right: 0px;
+    }
+    .leftBox {
+        display: none;
+    }
+    .rightBox {
+        width: 96vw;
+    }
+}
+
