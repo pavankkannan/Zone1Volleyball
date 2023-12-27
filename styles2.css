@@ -111,7 +111,7 @@ body, ul, nav, main {
 
 .sidebar {
     height: 90vh;
-    opacity: 0;
+    /* opacity: 0; */
     width: 50vw;
     background-color: black;
     display: flex;
@@ -119,6 +119,7 @@ body, ul, nav, main {
     clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
     position: fixed;
     top: 10vh;
+    z-index: 1;
 }
 
 

@@ -157,3 +157,12 @@ Array.from(players).forEach((player) => {
 document.addEventListener("mouseup", (e) => {
     court.removeEventListener("mousemove", onDrag);
 });
+
+function toggleNav() {
+    const element = document.getElementById("sidebar");
+    if (element.style.display == "none") {
+        element.style.display = "flex";
+    } else {
+        element.style.display = "none";
+    }
+}
