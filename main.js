@@ -166,3 +166,54 @@ function toggleNav() {
         element.style.display = "none";
     }
 }
+
+function toggleTOC() {
+  const element = document.getElementById("leftBox");
+  if (element.style.display == "none") {
+      element.style.display = "flex";
+  } else {
+      element.style.display = "none";
+  }
+}
+
+function changeRow(buttonID) {
+  // document.getElementById(buttonID).style.border = "5px solid white";
+  const players = [
+    "leftFront", "middleFront", "rightFront",
+    "leftBack", "middleBack", "rightBack"];
+  let positions = [];
+  players.forEach((player, i) => {
+    switch (buttonID) {
+      case "row1" :
+        positions = ["OPP", "MB1", "OH1", 
+          "OH2", "MB2", "S"];
+        document.getElementById(player).innerText = positions[i]; 
+        break;
+      case "row2" :
+        positions = ["OH2", "OPP", "MB1", 
+          "MB2", "S", "OH1"];
+        document.getElementById(player).innerText = positions[i]; 
+        break;
+      case "row3":
+        positions = ["MB2", "OH2", "OPP", 
+          "S", "OH1", "MB1"];
+        document.getElementById(player).innerText = positions[i];
+        break;
+      case "row4" :
+        positions = ["S", "MB2", "OH2", 
+          "OH1", "MB1", "OPP"];
+        document.getElementById(player).innerText = positions[i]; 
+        break;
+      case "row5" :
+        positions = ["OH1", "S", "MB2", 
+          "MB1", "OPP", "OH2"];
+        document.getElementById(player).innerText = positions[i]; 
+        break;
+      case "row6" :
+        positions = ["MB1", "OH1", "S", 
+          "OPP", "OH2", "MB2"];
+        document.getElementById(player).innerText = positions[i]; 
+        break;
+      }
+  });
+}

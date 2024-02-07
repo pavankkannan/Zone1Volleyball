@@ -72,24 +72,24 @@
             </div>
             <div class="court">
                 <div class="tenFoot"></div>
-                <div class="player" data-position="leftBack">OH2</div>
-                <div class="player" data-position="middleBack">MB2</div>
-                <div class="player" data-position="rightBack">S</div>
-                <div class="player" data-position="leftFront">OPP</div>
-                <div class="player" data-position="middleFront">MB1</div>
-                <div class="player" data-position="rightFront">OH1</div>
+                <div class="player" data-position="leftBack" id="leftBack">OH2</div>
+                <div class="player" data-position="middleBack" id="middleBack">MB2</div>
+                <div class="player" data-position="rightBack" id="rightBack">S</div>
+                <div class="player" data-position="leftFront" id="leftFront">OPP</div>
+                <div class="player" data-position="middleFront" id="middleFront">MB1</div>
+                <div class="player" data-position="rightFront" id="rightFront">OH1</div>
             </div>
             <div class="toolInfoBox">
-                <h1 class="toolInfoHeader">HOW TO USE</h1>
+                <h1 class="toolInfoHeader">CHANGE ROTATION</h1>
                 <div style="display: flex; justify-content: space-evenly; margin: 2.5vh 0;">
-                    <button class="toolButton">1</button>
-                    <button class="toolButton">2</button>
-                    <button class="toolButton">3</button>
+                    <button class="toolButton" id="row1Btn" onclick="changeRow('row1')">1</button>
+                    <button class="toolButton" id="row2Btn" onclick="changeRow('row2')">2</button>
+                    <button class="toolButton" id="row3Btn" onclick="changeRow('row3')">3</button>
                 </div>
                 <div style="display: flex; justify-content: space-evenly;">
-                    <button class="toolButton">4</button>
-                    <button class="toolButton">5</button>
-                    <button class="toolButton">6</button>
+                    <button class="toolButton" id="row4Btn" onclick="changeRow('row4')">4</button>
+                    <button class="toolButton" id="row5Btn" onclick="changeRow('row5')">5</button>
+                    <button class="toolButton" id="row6Btn" onclick="changeRow('row6')">6</button>
                 </div>
             </div>
         </div>
